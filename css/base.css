@@ -9,6 +9,7 @@ body {
 header {
   margin: 10px;
   width: 80%;
+  z-index: 1400;
 }
 
 main {
@@ -231,4 +232,5 @@ main {
   .menu-button::after{
     content: " - ";
   }
+
 }
