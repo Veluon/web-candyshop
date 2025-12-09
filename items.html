@@ -1,0 +1,116 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial
+scale=1.0"> 
+        <link rel="icon" type="image/png" href="data/favicon.png">
+
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/items.css">
+        <link rel="stylesheet" href="css/catalog.css">
+
+        <title>каталог - Магазин сладостей</title>
+    </head> 
+    <body>
+        <div class="main-body" id="top_body">
+        <header>
+          <nav class="nav-menu">
+            <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+
+            <label for="burger-toggle" class="burger-label">
+              <span></span><span></span><span></span>
+            </label>
+
+            <ul class="nav-list">
+                <a class="menu-button" href="index.html">Главная</a>
+                <a class="menu-button" href="items.html">Товары</a>
+                <a class="menu-button" href="actions.html">Акции</a>
+                <a class="menu-button" href="delivery.html">Доставка</a>
+                <a class="menu-button" href="reviews.html">Отзывы</a>
+                <a class="menu-button" href="#footer">Контакты</a>
+
+                <button id="cart-toggle" class="cart-toggle">
+                  <img src="data/cart-icon.png" class="cart-icon">
+                  <span id="cart-count">0</span>
+                </button>
+
+
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <section class="gallery">
+            <figure class="card-category">
+              <img src="https://www.penzafood.ru/upload/iblock/950/2017Food_Cakes_and_Sweet_Appetizing_assorted_chocolates_on_white_background_118866_.jpg">
+              <figcaption>Конфеты</figcaption>
+            </figure>
+
+            <figure class="card-category">
+              <img src="https://rskrf.ru/upload/medialibrary/86d/tk7nwuih929e63mvmbigvslc7xmegdmy.jpg">
+              <figcaption>Мармелад</figcaption>
+            </figure>
+
+            <figure class="card-category">
+              <img src="data/коробка печенья.png">
+              <figcaption>Печенье</figcaption>
+            </figure>
+
+            <figure class="card-category">
+              <img src="data/пирожное.png">
+              <figcaption>Десерт</figcaption>
+            </figure>
+          </section>
+
+          <div class="catalog-wrap">
+            <aside class="sidebar" aria-label="Фильтры каталога">
+              <h3>Категории</h3>
+              <ul class="categories-list" id="categories">
+                <li><label><input type="checkbox" value="candies" checked> Конфеты</label></li>
+                <li><label><input type="checkbox" value="marmalade" checked> Мармелад</label></li>
+                <li><label><input type="checkbox" value="cookies" checked> Печенье</label></li>
+                <li><label><input type="checkbox" value="dessert" checked> Десерт</label></li>
+              </ul>
+
+              <div class="filter-row">
+                <label>Поиск по названию
+                  <input id="search" type="search" placeholder="Название товара">
+                </label>
+
+                <div class="range-row"> 
+                  <input id="price" type="range" min="0" max="2000" value="1000"> 
+                </div>
+
+                <div>
+                  <h3 class="price-header">
+                    Максимальная цена: <span id="priceValue">1000</span> ₽
+                  </h3>
+
+                  <div class="filter-actions">
+                    <button id="clear" class="clear-btn" type="button">Очистить фильтры</button>
+                  </div>
+
+                </div>
+              </div>
+            </aside>
+
+            <section class="catalog" id="catalog" aria-live="polite"></section>
+
+          </div>
+        </main>
+        <footer id="footer" class="main-footer">
+            <address class="footer-text">
+                <h3 class="footer-text" class="footer-text">Контакты</h3>
+                <a href="tel:01234567890">+7 (999) 999-99-99</a>
+                <a href="mailto:pochta@gmail.com">pochta@gmail.com</a>
+            </address>
+            <address class="footer-text">
+                <h3 class="footer-text">Дополнительно</h3>
+                <a>ЧАСЫ РАБОТЫ ПН-ПТ С 9:00 ДО 21:00, СБ-ВС С 10:00 ДО 19:00</a>
+            </address>
+        </footer>
+        </div>
+    <script defer src="js/catalog.js"></script>
+    <script defer src="js/cart.js"></script>
+    </body>
+</html>

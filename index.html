@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial
+    scale=1.0"> 
+        <link rel="icon" type="image/png" href="data/favicon.png">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/base.css">
+        <title>Магазин сладостей</title>
+    </head> 
+
+    <body>
+        <div class="main-body" id="top_body">
+        <header>
+            <nav class="nav-menu">
+                <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+
+                <label for="burger-toggle" class="burger-label">
+                    <span></span><span></span><span></span>
+                </label>
+
+                <ul class="nav-list">
+                    <a class="menu-button" href="index.html">Главная</a>
+                    <a class="menu-button" href="items.html">Товары</a>
+                    <a class="menu-button" href="actions.html">Акции</a>
+                    <a class="menu-button" href="delivery.html">Доставка</a>
+                    <a class="menu-button" href="reviews.html">Отзывы</a>
+                    <a class="menu-button" href="#footer">Контакты</a>
+                </ul>
+            </nav>
+        </header>
+        <div class="panel-1">
+            <h1 id="start">МАРМЕЛАДКИ</h1>
+            <h4 id="adress"><i>Магазин сладостей</i></h4>
+        </div>
+        <main>
+        <section class="main-section">
+            <article class="article-mainpage">
+                <h3 class="title-article">Большой ассортимент</h3>
+                <div class="hidden-div">
+                    <ul class="delivery-ul"> 
+                        <li>Более 10 позиций</li>
+                        <li>Сладости из заграницы</li>
+                        <li>Различные наборы</li>
+                    </ul>
+                </div>
+            </article>
+            
+            <article class="article-mainpage">
+                <h3 class="title-article">Честные отзывы</h3>
+                <div class="hidden-div">
+                    <div id="reviews-carousel" class="reviews-carousel" aria-label="Карусель отзывов"></div>
+                </div>
+            </article>
+
+
+            <article class="article-mainpage">
+                <h3 class="title-article">Доставка</h3>
+                <div class="hidden-div">
+                    <ul class="delivery-ul"> 
+                        <li>Доставка по Москве</li>
+                        <li>Доставка по Москвоской области</li>
+                        <li>Экспресс-доставка</li>
+                        <li>Доставка по России</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="article-mainpage">
+                <h3 class="title-article">Поможем подобрать подарок</h3>
+
+                <form class="call-form" id="call-form">
+                    <p class="call-title">Перезвоните мне</p>
+
+                    <input
+                    class="call-label"
+                    type="text"
+                    name="name"
+                    placeholder="Имя"
+                    required
+                    >
+
+                    <input
+                    class="call-label"
+                    id="phone-input"
+                    type="tel"
+                    name="tel"
+                    inputmode="tel"
+                    placeholder="Телефон" 
+                    pattern="[0-9]{11,}"
+                    required
+                    >
+
+                    <input class="call-button" type="submit" name="submit1" value="Перезвоните мне">
+                </form>
+            </article>
+
+        </section>
+        <script defer src="js/reviews.js"></script>
+        </main>
+
+        <a class="buy-button" href="items.html">Сделать заказ</a>
+
+        <footer id="footer" class="main-footer">
+            <address class="footer-text">
+                <h3 class="footer-text" class="footer-text">Контакты</h3>
+                <a href="tel:01234567890">+7 (999) 999-99-99</a>
+                <a href="mailto:pochta@gmail.com">pochta@gmail.com</a>
+            </address>
+            <address class="footer-text">
+                <h3 class="footer-text">Дополнительно</h3>
+                <a>ЧАСЫ РАБОТЫ ПН-ПТ С 9:00 ДО 21:00, СБ-ВС С 10:00 ДО 19:00</a>
+            </address>
+        </footer>
+        </div>
+    </body> 
+</html> 

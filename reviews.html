@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial
+    scale=1.0"> 
+        <link rel="icon" type="image/png" href="data/favicon.png">
+
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/reviews.css">
+        
+        <title>отзывы - Магазин сладостей</title>
+    </head> 
+    <body>
+        <div class="main-body" id="top_body">
+        <header><nav class="nav-menu">
+            <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+            <label for="burger-toggle" class="burger-label">
+            <span></span><span></span><span></span>
+            </label>
+            <ul class="nav-list">
+                <a class="menu-button" href="index.html">Главная</a>
+                <a class="menu-button" href="items.html">Товары</a>
+                <a class="menu-button" href="actions.html">Акции</a>
+                <a class="menu-button" href="delivery.html">Доставка</a>
+                <a class="menu-button" href="reviews.html">Отзывы</a>
+                <a class="menu-button" href="index.html#footer">Контакты</a>
+            </ul>
+        </nav>
+    </header>
+        <main>
+            <section class="reviews-container" aria-label="Отзывы покупателей">
+                <div class="reviews-top">
+                    <h1 class="section-title">Отзывы</h1>
+                    <button id="open-add-review" class="add-review-btn" type="button">Добавить отзыв</button>
+                </div>
+
+                <div class="reviews-list"></div>
+            </section>
+
+            <div id="add-review-modal" class="modal-overlay" aria-hidden="true">
+                <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Добавить отзыв">
+                <button class="modal-close" aria-label="Закрыть">✕</button>
+                
+                    <h2 class="add-review-title">Добавить отзыв</h2>
+
+                    <form>
+                        <label class="add-review-label">
+                        Имя
+                            <input name="name" type="text" placeholder="Ваше имя (необязательно)" class="reviewer-name">
+                        </label>
+                        <label class="add-review-label">
+                        Отзыв <span class="add-review-span"></span>
+                            <textarea name="text" rows="5" required class="review-text"></textarea>
+                        </label>
+                        <div class="modal-buttons">
+                            <button type="button" class="modal-close"></button>
+                            <button type="submit" class="modal-sumbit">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <script defer src="js/reviews.js"></script>
+            </main>
+            <footer id="footer" class="main-footer">
+            <address class="footer-text">
+                <h3 class="footer-text" class="footer-text">Контакты</h3>
+                <a href="tel:01234567890">+7 (999) 999-99-99</a>
+                <a href="mailto:pochta@gmail.com">pochta@gmail.com</a>
+            </address>
+            <address class="footer-text">
+                <h3 class="footer-text">Дополнительно</h3>
+                <a>ЧАСЫ РАБОТЫ ПН-ПТ С 9:00 ДО 21:00, СБ-ВС С 10:00 ДО 19:00</a>
+            </address>
+            </footer>
+        </div>
+    </body>
+</html>
