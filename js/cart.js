@@ -2,17 +2,17 @@
 
   // список товаров
   const products = [
-    { id: 'p1', title: 'Ассорти конфет', price: 200, img: 'https://www.penzafood.ru/upload/iblock/950/2017Food_Cakes_and_Sweet_Appetizing_assorted_chocolates_on_white_background_118866_.jpg', category:'candies', desc:''},
-    { id: 'p2', title: 'Мармелад фруктовый', price: 140, img: 'https://rskrf.ru/upload/medialibrary/86d/tk7nwuih929e63mvmbigvslc7xmegdmy.jpg', category:'marmalade', desc:''},
-    { id: 'p3', title: 'Печенье с шоколадом', price: 200, img: 'data/коробка печенья.png', category:'cookies', desc:''},
-    { id: 'p4', title: 'Набор конфет', price: 350, img: 'data/набор конфет.png', category:'candies', desc:''},
-    { id: 'p5', title: 'Леденцы ассорти', price: 220, img: 'data/леденцы.png', category:'marmalade', desc:''},
-    { id: 'p6', title: 'Набор мармелада', price: 300, img: 'data/набор мармелада.png', category:'marmalade', desc:''},
-    { id: 'p7', title: 'Печенье с начинкой', price: 250, img: 'data/печенье.png', category:'cookies', desc:''},
-    { id: 'p8', title: 'Эклеры', price: 200, img: 'data/эклеры.png', category:'dessert', desc:''},
-    { id: 'p9', title: 'Тарталетка', price: 120, img: 'data/тарталетка.png', category:'dessert', desc:''},
-    { id: 'p10', title: 'Кислые трубочки', price: 150, img: 'data/мармелад трубочки.png', category:'marmalade', desc:''},
-    { id: 'p11', title: 'Пирожное', price: 100, img: 'data/пирожное.png', category:'dessert', desc:''}
+    { id: 'p1', title: 'Ассорти конфет', price: 200, img: 'https://www.penzafood.ru/upload/iblock/950/2017Food_Cakes_and_Sweet_Appetizing_assorted_chocolates_on_white_background_118866_.jpg', category:'candies', desc:'Ассорти конфет (150г)'},
+    { id: 'p2', title: 'Мармелад фруктовый', price: 140, img: 'https://rskrf.ru/upload/medialibrary/86d/tk7nwuih929e63mvmbigvslc7xmegdmy.jpg', category:'marmalade', desc:'Производитель "Сладко". Мармелад фруктовый'},
+    { id: 'p3', title: 'Печенье с шоколадом', price: 200, img: 'data/коробка печенья.png', category:'cookies', desc:'Коробка печенья (15 шт)'},
+    { id: 'p4', title: 'Набор конфет', price: 350, img: 'data/набор конфет.png', category:'candies', desc:'Подарочный набор конфет'},
+    { id: 'p5', title: 'Леденцы ассорти', price: 220, img: 'data/леденцы.png', category:'marmalade', desc:'Баночка леденцов (100г)'},
+    { id: 'p6', title: 'Набор мармелада', price: 300, img: 'data/набор мармелада.png', category:'marmalade', desc:'Подарочный набор мармелада'},
+    { id: 'p7', title: 'Печенье с начинкой', price: 250, img: 'data/печенье.png', category:'cookies', desc:'Печенье с различной начинкой'},
+    { id: 'p8', title: 'Эклеры', price: 200, img: 'data/эклеры.png', category:'dessert', desc:'Эклеры ручной работы'},
+    { id: 'p9', title: 'Тарталетка', price: 120, img: 'data/тарталетка.png', category:'dessert', desc:'Тарталетка с ягодами'},
+    { id: 'p10', title: 'Кислые трубочки', price: 150, img: 'data/мармелад трубочки.png', category:'marmalade', desc:'Мармелад кислые трубочки (200г)'},
+    { id: 'p11', title: 'Пирожное', price: 100, img: 'data/пирожное.png', category:'dessert', desc:'Пирожное с кремом'}
   ];
 
   // парсинг содержимого корзины
@@ -475,3 +475,4 @@
 
   window.__miniCart = { cart, products, renderCatalog, updateCartUI };
 })();
+
