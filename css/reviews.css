@@ -173,7 +173,7 @@
 
 .reviewer-name
 {
-  width: 100%;
+  width: 95%;
   padding: 8px;
   margin-top: 6px;
   border-radius: 6px;
@@ -182,7 +182,7 @@
 
 .review-text
 {
-  width: 100%;
+  width: 95%;
   padding: 8px;
   margin-top: 6px;
   border-radius: 6px;
@@ -211,3 +211,4 @@
     padding: 10px; 
   }
 }
+
